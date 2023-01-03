@@ -1,0 +1,26 @@
+<section id="services_section" class="py-3">
+     <div class="container">
+       <h1 class="text-center text-secondry">Our Services</h1>
+      <div class="row mt-5">
+        {{!-- first services section --}}
+        {{#each services}}
+        <div class="col-md-4">
+          <div class="card">
+            
+            <div class="card-body">
+              <div class="container text-center py-3">
+                <i class="{{this.icon}} service_icon text-secondry"></i>
+              </div>
+              <h5 class="card-title">{{this.title}}</h5>
+              <p>{{this.description}}</p>
+
+              <a href="{{this.linkText}}">{{this.link}}</a>
+              <a href="#!" class="ml-3">Support</a>
+            </div>
+
+          </div>
+        </div>
+        {{/each}}
+      </div>
+     </div>
+    </section>
